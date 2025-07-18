@@ -1,0 +1,100 @@
+/* -------- SECCIÓN GIFT CARD & YAPE -------- */
+.giftcard-yape {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #292828, #1e1d1d);
+  color: #fff;
+  text-align: center;
+}
+
+.giftcard-yape h2 {
+  font-size: 2.8em;
+  margin-bottom: 40px;
+  color: #ffcf3f;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.giftcard-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.giftcard-info {
+  max-width: 500px;
+  padding: 20px;
+}
+
+.giftcard-info h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #ffdd57;
+}
+
+.giftcard-info p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.btn-giftcard {
+  background-color: #ffcf3f;
+  color: #000;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.btn-giftcard:hover {
+  transform: scale(1.05);
+  background-color: #ffd83d;
+}
+
+.giftcard-img img {
+  width: 120px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 223, 63, 0.4);
+}
+
+/* YAPE SECTION */
+.yape-section {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.yape-section h3 {
+  color: #7fffac;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.yape-section p {
+  margin: 10px 0;
+  color: #ccc;
+}
+
+.yape-qr {
+  width: 200px;
+  height: 200px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #7fffac;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .giftcard-container {
+    flex-direction: column;
+  }
+
+  .giftcard-img img {
+    margin-top: 20px;
+  }
+}

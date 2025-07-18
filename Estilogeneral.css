@@ -1,0 +1,71 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f0;
+  color: #fff;
+}
+
+/* Encabezado oscuro con logo y menú */
+header {
+  background-color: #4b1e0d; /* Marrón oscuro similar */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Menú de navegación */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Elementos del menú */
+nav ul li {
+  margin: 0 10px;
+}
+
+/* Enlaces del menú */
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Efecto hover */
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Botón de delivery destacado */
+.btn-delivery {
+  background-color: #b02020; /* Rojo oscuro */
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn-delivery:hover {
+  background-color: #8a1616;
+}
+
+
+/* Pie de página */
+footer {
+  background-color: #4b1e0d;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9em;
+}

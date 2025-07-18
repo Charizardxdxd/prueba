@@ -1,0 +1,146 @@
+/* -------------------- CONTENIDO PRINCIPAL -------------------- */
+.container {
+  text-align: center;
+  margin: 40px auto;
+}
+
+/* -------------------- MONSTRUO -------------------- */
+.monster {
+  background: #4b1e0d;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Ojo */
+.eye {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+/* Pupila que sigue el cursor */
+.pupil {
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px; /* centrada inicialmente */
+  left: 15px;
+  transition: all 0.05s;
+}
+
+/* -------------------- FORMULARIO -------------------- */
+form {
+  max-width: 500px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  background: rgba(255,255,255,0.9);
+  color: #000;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+h2 {
+  color: #4b1e0d;
+  margin-bottom: 15px;
+}
+
+.delivery-form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.delivery-form input,
+.delivery-form textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 2px solid #4b1e0d;
+  border-radius: 5px;
+  outline: none;
+  font-size: 0.95em;
+}
+
+.delivery-form textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.delivery-form button {
+  background: #b02020;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delivery-form button:hover {
+  background: #8a1616;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('norkys.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow-x: hidden;
+  color: #fff;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 20px 0;
+  color: #fff;
+  text-shadow: 1px 1px 4px #000;
+}
+
+/* --------- RESPONSIVE --------- */
+@media (max-width: 600px) {
+  .eye {
+    width: 80px;
+    height: 80px;
+  }
+
+  .pupil {
+    width: 24px;
+    height: 24px;
+    top: 28px;
+    left: 28px;
+  }
+}

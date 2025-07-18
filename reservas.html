@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante Norkis</title>
+  <!-- Enlace a los estilos -->
+  <link rel="stylesheet" href="Estilogeneral.css">
+  <link rel="stylesheet" href="reservas.css">
+</head>
+<body>
+
+  <!-- Encabezado con logo y menú -->
+  <header>
+    <div class="logo">Norkis</div>
+    <nav>
+      <ul>
+        <li><a href="cartilla.html">La Carta</a></li>
+        <li><a href="locales.html">Locales</a></li>
+        <li><a href="gifcard.html">Gift Card</a></li>
+        <li><a href="INDEX.html">Home</a></li>
+      </ul>
+    </nav>
+    <a class="btn-delivery" href="delivery.html">Delivery</a>
+  </header>
+
+<!-- MONSTRUO -->
+  <div class="monster-container">
+    <div class="eye">
+      <div class="pupil" id="pupil"></div>
+    </div>
+    <h2>Reserva tu mesa</h2>
+  </div>
+
+  <!-- FORMULARIO -->
+  <form method="POST" action="https://formspree.io/f/xnnvkpkg">
+    <input type="text" name="nombre" placeholder="Nombre completo" required>
+    <input type="email" name="correo" placeholder="Correo electrónico" required>
+    <input type="tel" name="telefono" placeholder="Teléfono" required>
+    <input type="date" name="fecha" required>
+    <input type="time" name="hora" required>
+    <select name="personas" required>
+      <option value="">Cantidad de personas</option>
+      <option value="1">1 persona</option>
+      <option value="2">2 personas</option>
+      <option value="3">3 personas</option>
+      <option value="4">4 personas</option>
+      <option value="5+">5 o más</option>
+    </select>
+    <textarea name="mensaje" placeholder="Observaciones (opcional)"></textarea>
+    <button type="submit">Reservar ahora</button>
+  </form>
+
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Restaurante Criollo. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const eye = document.querySelector('.eye');
+    const pupil = document.getElementById('pupil');
+
+    document.addEventListener('mousemove', (e) => {
+      const eyeRect = eye.getBoundingClientRect();
+      const eyeCenterX = eyeRect.left + eyeRect.width / 2;
+      const eyeCenterY = eyeRect.top + eyeRect.height / 2;
+
+      const angle = Math.atan2(e.pageY - eyeCenterY, e.pageX - eyeCenterX);
+      const radius = 20;
+
+      const pupilX = radius * Math.cos(angle);
+      const pupilY = radius * Math.sin(angle);
+
+      pupil.style.left = 35 + pupilX + 'px';
+      pupil.style.top = 35 + pupilY + 'px';
+    });
+  </script>
+
+</body>
+</html>

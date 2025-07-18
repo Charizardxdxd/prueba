@@ -1,0 +1,83 @@
+/* -------------------- SECCIÓN PRINCIPAL -------------------- */
+.menu-principal {
+  position: relative;
+  background-image: url('norkys.jpg'); /* Cambia por tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Capa semitransparente para oscurecer fondo y resaltar texto */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+/* Eslogan */
+.overlay h2 {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* Botones */
+.botones {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.botones a {
+  display: block;
+  padding: 12px 20px;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.botones a:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Redes sociales */
+.redes a {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.redes img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1); /* Si los íconos son negros, se vuelven blancos */
+  transition: transform 0.3s;
+}
+
+.redes img:hover {
+  transform: scale(1.2);
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 600px) {
+  .overlay h2 {
+    font-size: 1em;
+  }
+
+  .botones a {
+    font-size: 0.9em;
+    padding: 10px 15px;
+  }
+}

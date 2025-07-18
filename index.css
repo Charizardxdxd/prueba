@@ -1,0 +1,148 @@
+/* Sección principal con imagen destacada */
+.hero {
+  background-image: url('norkys.jpg'); /* Cambia por tu imagen */
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Texto sobre la imagen */
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Sección de platos destacados */
+.platos-destacados {
+    padding: 40px 20px;
+    text-align: center;
+    color: #1a1919;
+}
+
+/* Contenedor de cada plato */
+.plato {
+    display: inline-block;
+    margin: 20px;
+    width: 300px; /* ancho fijo */
+    background-color: #fff;
+    border: 1px solid #1a1919;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Imagen del plato con tamaño predefinido */
+.plato img {
+    width: 300px;      /* ancho fijo */
+    height: 200px;     /* alto fijo */
+    object-fit: cover; /* recorta o ajusta la imagen para llenar el espacio sin deformarse */
+    display: block;    /* quita espacios debajo de la imagen */
+}
+
+/* Título del plato */
+.plato h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+/* Descripción del plato */
+.plato p {
+    padding: 0 10px 10px;
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* Carrusel */
+.carrusel {
+  overflow: hidden;
+  width: 100%;
+  background: #111; /* fondo oscuro */
+  padding: 10px 0;
+}
+
+.carrusel-inner {
+  display: flex;
+  width: max-content; /* el ancho se adapta a los elementos */
+  animation: scroll 20s linear infinite;
+}
+
+.carrusel-inner img {
+  width: 300px;   /* tamaño fijo */
+  height: 200px;  /* tamaño fijo */
+  object-fit: cover;
+  margin: 0 10px; /* separación entre imágenes */
+  border-radius: 8px;
+}
+
+/* Animación para mover el carrusel a la izquierda */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+/* ----- SECCIÓN SOBRE EL RESTAURANTE ----- */
+.sobre-restaurante {
+  background: linear-gradient(to right, #fffaf0, #fef6e4);
+  padding: 60px 20px;
+  color: #333;
+}
+
+.contenedor-sobre {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.texto-sobre {
+  flex: 1 1 500px;
+}
+
+.texto-sobre h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #c0392b;
+}
+
+.texto-sobre p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.imagen-sobre {
+  flex: 1 1 400px;
+}
+
+.imagen-sobre img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contenedor-sobre {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}

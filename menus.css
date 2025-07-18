@@ -1,0 +1,106 @@
+/* Estilo general carta */
+.carta {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #fdfbf9;
+  color: #3a2f2f;
+  font-family: 'Georgia', serif;
+}
+
+.carta-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.carta-header h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.carta-header p {
+  font-size: 0.9em;
+  color: #6c5c5c;
+}
+
+/* Títulos de sección */
+.titulo-seccion {
+  text-align: center;
+  font-size: 1.8em;
+  margin: 30px 0 10px;
+  position: relative;
+}
+
+.titulo-seccion::before,
+.titulo-seccion::after {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background: #3a2f2f;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.subtitulo-seccion {
+  text-align: center;
+  font-size: 1.4em;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.subtitulo-seccion::before,
+.subtitulo-seccion::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 1px;
+  background: #3a2f2f;
+  margin: 0 8px;
+  vertical-align: middle;
+}
+
+/* Lista de platos */
+.platos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* Cada plato */
+.plato {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Nombre y precio */
+.plato-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+/* Imagen */
+.plato img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Descripción */
+.plato-desc {
+  font-size: 0.9em;
+  color: #555;
+  text-align: center;
+}
